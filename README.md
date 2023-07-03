@@ -25,5 +25,5 @@ http://maghreb.ae/
 git clone https://github.com/mrglk/maghreb-web
 cd maghreb-web
 npm i
-npm start
+npm run dev
 ```
