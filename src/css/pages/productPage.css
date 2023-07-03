@@ -1,0 +1,45 @@
+.productPage__header {
+    margin-bottom: 40px;
+}
+
+.productPage__card {
+    margin-bottom: 145px;
+}
+
+.productPage__more {
+    margin-bottom: 180px;
+}
+
+@media screen and (max-width: 1700px) {
+    .productPage__card {
+        margin-bottom: 130px;
+    }
+
+    .productPage__more {
+        margin-bottom: 160px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .productPage__card {
+        margin-bottom: 100px;
+    }
+
+    .productPage__more {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .productPage__header {
+        margin-bottom: 30px;
+    }
+
+    .productPage__card {
+        margin-bottom: 70px;
+    }
+
+    .productPage__more {
+        margin-bottom: 70px;
+    }
+}

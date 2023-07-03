@@ -1,0 +1,384 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+    <title>Maghreb – Новости</title>
+    <style> .burgerMenu {visibility: hidden} .overlay {opacity: 0} .animatedButton__contentHovered{transform: translateY(100%)}</style>
+</head>
+
+<body class="newsPage">
+    <header class="newsPage__header header container">
+        <div class="header__inner js-header">
+            <div class="container__row js-header-container-row">
+                <div class="header__content">
+                    <div class="header__left">
+                        <a href="./index.html" class="header__logo">
+                            <svg class="header__logoIcon">
+                                <use href="./spritemap.svg#icon-logo" />
+                            </svg>
+                        </a>
+                        <nav>
+                            <a href="./catalog.html" class="header__catalogLink">
+                                <p class="header__link"> Продукция</p>
+                                <svg class="header__catalogIcon">
+                                    <use href="./spritemap.svg#icon-dots-icon" />
+                                </svg>
+                            </a>
+                        </nav>
+                    </div>
+                    <nav class="header__center">
+                        <!-- <a href="./team.html" class="header__link">Команда</a> -->
+                        <a href="./export-calender.html" class="header__link">Календарь экспорта</a>
+                        <a href="./news.html" class="header__link">Новости</a>
+                        <a href="./contacts.html" class="header__link">Контакты</a>
+                    </nav>
+                    <div class="header__right">
+                        <div class="header__langs">
+                            <a href="#" class="header__lang">EN</a>
+                            <a href="#" class="header__lang header__lang--active">RU</a>
+                        </div>
+                        <div class="header__button">
+                            <div class="animatedButton buttonWrapper">
+                                <button class="animatedButton__content button js-open-modal"
+                                    data-modal="application">Связаться с нами</button>
+                                <button class="animatedButton__contentHovered button js-open-modal"
+                                    data-modal="application">Связаться с нами</button>
+                            </div>
+                        </div>
+                        <div class="header__burgerButton js-burger-menu-button">
+                            <span class="header__burgerIcon"></span>
+                        </div>
+                    </div>
+                </div>
+                    <div class="burgerMenu container js-burger-menu">
+                        <div class="container__row">
+                            <div class="burgerMenu__innerWrapper">
+                                <div class="burgerMenu__inner">
+                                    <div class="burgerMenu__content">
+                                        <nav class="burgerMenu__nav">
+                                            <div><a href="./catalog.html" class="burgerMenu__link">Продукция</a></div>
+                                            <!-- <div><a href="./team.html" class="burgerMenu__link">Команда</a></div> -->
+                                            <div><a href="./export-calender.html" class="burgerMenu__link">Календарь
+                                                    экспорта</a></div>
+                                            <div><a href="./news.html" class="burgerMenu__link">Новости</a></div>
+                                            <div><a href="./contacts.html" class="burgerMenu__link">Контакты</a></div>
+                                        </nav>
+                                        <div class="burgerMenu_contacts">
+                                            <div class="burgerMenu__phoneWrapper">
+                                                <p class="burgerMenu_contactsTitle">Телефон</p>
+                                                <a href="tel:+971(50)3653964" class="burgerMenu__tel">+971 (50) 365 39
+                                                    64</a>
+                                            </div>
+                                            <div class="burgerMenu__emailWrapper">
+                                                <p class="burgerMenu_contactsTitle">Почта</p>
+                                                <a href="info@maghreb.ae" class="burgerMenu__email">info@maghreb.ae</a>
+                                            </div>
+                                            <div class="burgerMenu__socials">
+                                                <a href="#" target="_blank" class="burgerMenu__socialLink">
+                                                    <svg class="burgerMenu__socialIcon">
+                                                        <use href="./spritemap.svg#icon-tg-icon" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" target="_blank" class="burgerMenu__socialLink">
+                                                    <svg class="burgerMenu__socialIcon">
+                                                        <use href="./spritemap.svg#icon-fb-icon" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" target="_blank" class="burgerMenu__socialLink">
+                                                    <svg class="burgerMenu__socialIcon">
+                                                        <use href="./spritemap.svg#icon-vk-icon" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="burgerMenu__button">
+                                        <div class="animatedButton buttonWrapper">
+                                            <button class="animatedButton__content button js-open-modal"
+                                                data-modal="application">Связаться с нами</button>
+                                            <button class="animatedButton__contentHovered button js-open-modal"
+                                                data-modal="application">Связаться с нами</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="newsPage__breadcrumbs container">
+            <div class="container__row">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./index.html">Главная</a>
+                    <a class="breadcrumbs__link breadcrumbs__link--active" href="./catalog.html">Новости</a>
+                </div>
+            </div>
+        </div>
+        <section class="newsPage__news newsList container">
+            <div class="container__row">
+                <div class="newsList__inner">
+                    <h1 class="newsList__header title js-title" data-class="title--shown">Новости</h1>
+                    <div class="newsList__content">
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/1.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/2.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/3.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/4.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/5.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/6.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/7.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/8.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="newsList__item">
+                                <a href="./single-news.html" class="newsCard">
+                                    <img class="newsCard__img" src="/public/news/news-page/9.jpg" alt="Новость">
+                                    <div class="newsCard__content">
+                                        <time class="newsCard__date">12.12.2022</time>
+                                        <h3 class="newsCard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit rcitation </h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                    </div>
+                    <div class="newsList__button newsList__button--hidden">
+                        <div class="animatedButton animatedButton--transparent buttonWrapper">
+                            <button class="animatedButton__content button button--transparent">Показать еще</button>
+                            <button class="animatedButton__contentHovered button button--transparent">Показать еще</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="container__row">
+            <div class="footer__mainWrapper">
+                <div class="footer__main">
+                    <div class="footer__logoWrapper">
+                        <a href="./index.html">
+                            <svg class="footer__logoIcon">
+                                <use href="./spritemap.svg#icon-logo" />
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="footer__nav">
+                        <div class="footer__navColumn">
+                            <!-- <a href="./team.html" class="footer__link">Команда</a> -->
+                            <a href="./catalog.html" class="footer__link">Каталог</a>
+                            <a href="./news.html" class="footer__link">Новости</a>
+                            <a href="./export-calender.html" class="footer__link">Календарь экспорта</a>
+                        </div>
+                        <div class="footer__navColumn">
+                            <a href="#" class="footer__link">Условия использования</a>
+                            <a href="#" class="footer__link">Политика конфиденциальности</a>
+                            <a href="./contacts.html" class="footer__link">Контакты</a>
+                        </div>
+                    </nav>
+                    <div class="footer__subscribe">
+                        <p class="footer__subscribeText">Не пропустите наши обновления<br />
+                            Подпишитесь на нашу рассылку</p>
+                        <form action="#" class="footer__subscribeForm" id="subscribe">
+                            <input class="footer__subscribeInput" data-validation="email" type="text" name="email"
+                                placeholder="Электронная почта" />
+                                <button type="submit" class="arrowButton arrowButton--bigger">
+                                    <svg class="arrowButton__icon">
+                                        <use href="./spritemap.svg#icon-arrow-icon" />
+                                    </svg>
+                                </button>
+                        </form>
+                        <div class="footer__socials">
+                            <a href="#" target="_blank" class="footer__socialLink">
+                                <svg class="footer__socialIcon">
+                                    <use href="./spritemap.svg#icon-tg-icon" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="footer__socialLink">
+                                <svg class="footer__socialIcon">
+                                    <use href="./spritemap.svg#icon-fb-icon" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="footer__socialLink">
+                                <svg class="footer__socialIcon">
+                                    <use href="./spritemap.svg#icon-vk-icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottomWrapper">
+            <div class="container__row">
+                <div class="footer__bottom">
+                    <p>2023 © Maghreb</p>
+                    <a class="footer__madeLink" href="https://finik.org/" target="_blank">Сайт сделан в <span
+                            class="footer__madeLink--highlight">FINIK</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="modals js-modals">
+        <div class="modals__item" id="application">
+            <div class="modals__content applicationForm">
+                <div class="applicationForm__close modals__close js-close-modals">
+                    <button class="closeButton"></button>
+                </div>
+                <div class="applicationForm__inner">
+                    <h2 class="applicationForm__title">Оставить заявку</h2>
+                    <p class="applicationForm__description">Заполните форму и наш менеджер свяжется
+                        с Вами в ближайшее время</p>
+                    <div class="applicationForm__form">
+                        <form action="#" class="form">
+                            <div class="form__fields">
+                                <div class="form__nameAndPhoneInputs">
+                                    <input class="form__input" data-validation="required" type="text" name="name" placeholder="Имя" />
+                                    <input class="form__input" data-validation="required" type="text" name="tel" placeholder="Телефон" />
+                                </div>
+                                <input class="form__input" data-validation="email" type="text" name="email" placeholder="Электронная почта" />
+                                <textarea class="form__input form__textarea" type="text" name="message"
+                                    placeholder="Сообщение (не обязательно)"></textarea>
+                            </div>
+                            <div class="form__checkbox">
+                                <input class="form__checkboxInput" data-validation="checkbox" type="checkbox" id="agreementApplication" checked />
+                                <label class="form__checkboxLabel" for="agreementApplication">
+                                    <div class="form__checkboxBox">
+                                        <div class="form__checkboxMark"></div>
+                                    </div>
+                                    <p class="form__checkboxText">Нажав на кнопку, вы соглашаетесь на обработку
+                                        персональных данных</p>
+                                </label>
+                            </div>
+                            <div class="form__button form__button--center">
+                                <div class="animatedButton buttonWrapper">
+                                    <input type="submit" data-success="Sent"
+                                        class="animatedButton__content button button--smaller" value="Отправить заявку">
+                                    <input type="submit" data-success="Sent"
+                                        class="animatedButton__contentHovered button button--smaller"
+                                        value="Отправить заявку" />
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modals__item" id="thanksApplication">
+            <div class="modals__content thanks">
+                <div class="thanks__close modals__close js-close-modals">
+                    <button class="closeButton"></button>
+                </div>
+                <div class="thanks__inner">
+                    <h1 class="thanks__header">Спасибо <br />за заявку</h1>
+                    <p class="thanks__description">Наш менеджер скоро свяжется с вами</p>
+                    <div class="animatedButton buttonWrapper">
+                        <button class="animatedButton__content button button--wider button--smaller js-close-modals"
+                            data-modal="application">Закрыть</button>
+                        <button
+                            class="animatedButton__contentHovered button button--wider button--smaller js-close-modals"
+                            data-modal="application">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modals__item" id="thanksSubscribe">
+            <div class="modals__content thanks">
+                <div class="thanks__close modals__close js-close-modals">
+                    <button class="closeButton"></button>
+                </div>
+                <div class="thanks__inner">
+                    <h1 class="thanks__header">Спасибо <br />за подписку</h1>
+                    <p class="thanks__description">Первое письмо уже на вашей почте</p>
+                    <div class="animatedButton buttonWrapper">
+                        <button class="animatedButton__content button button--wider button--smaller js-close-modal"
+                            data-modal="application">Закрыть</button>
+                        <button
+                            class="animatedButton__contentHovered button button--wider button--smaller js-close-modal"
+                            data-modal="application">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay js-overlay"></div>
+</body>
+</html>

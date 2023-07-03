@@ -1,0 +1,137 @@
+.preloader {
+    background-color: var(--cream);
+    padding: 0;
+    width: 100vw;
+    height: var(--vh);
+    left: 0;
+    top: 0;
+    position: fixed;
+  
+    z-index: 100;
+  
+    opacity: 1;
+    visibility: visible;
+  
+    transition: opacity 300ms ease, visibility 300ms ease;
+  }
+  
+  .preloader--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .preloader--nope {
+    display: none;
+  }
+  
+  .preloader__row {
+    background-color: var(--cream);
+    padding: 0;
+    max-width: none;
+  }
+  
+  .preloader__wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .preloader__progressLine {
+    height: 10px;
+    width: 100vw;
+  
+    display: flex;
+  }
+  
+  .preloader__progressLineCurrent {
+    width: 0;
+    height: 10px;
+    background-color: var(--orange);
+  
+    align-self: flex-end;
+  
+    transition: width 200ms ease;
+  
+    position: relative;
+  }
+  
+  .preloader__text {
+    font-weight: 700;
+    margin-bottom: 50px;
+  
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+  
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--black);
+  
+    transform: translateX(30px);
+    transition: transform 200ms linear;
+  }
+  
+  .preloader__number {
+    font-size: 62px;
+    position: relative;
+  }
+  
+  .preloader__numberDigit {
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+  
+    opacity: 1;
+  
+    transition: opacity 200ms ease;
+  }
+  
+  .preloader__numberDigit--done {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .preloader__percent {
+    font-size: 62px;
+  }
+
+  @media screen and (max-width: 1700px) {
+    .preloader__text {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .preloader__text {
+        margin-bottom: 35px;
+    }
+
+    .preloader__number,
+    .preloader__percent {
+        font-size: 42px;
+    }
+
+    .preloader__progressLine,
+    .preloader__progressLineCurrent {
+        height: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .preloader__text {
+        margin-bottom: 30px;
+    }
+    .preloader__number,
+    .preloader__percent {
+        font-size: 32px;
+    }
+   
+    .preloader__progressLine,
+    .preloader__progressLineCurrent {
+        height: 10px;
+    }
+}

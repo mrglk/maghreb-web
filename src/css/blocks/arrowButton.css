@@ -1,0 +1,37 @@
+.arrowButton {
+    cursor: pointer;
+    background-color: var(--red);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 300ms ease;
+}
+
+.arrowButton:hover {
+    background-color: var(--black);
+}
+
+.arrowButton__icon {
+    width: 10px;
+    height: 10px;
+}
+
+.arrowButton--bigger {
+    padding: 13px 18px;
+}
+
+.arrowButton--bigger .arrowButton__icon {
+    width: 11px;
+    height: 11px;
+}
+
+@media screen and (max-width: 950px) {
+    .arrowButton--bigger {
+        padding: 10px 14.5px;
+    }
+    .arrowButton--bigger .arrowButton__icon {
+        width: 10px;
+        height: 10px;
+    }
+    
+}

@@ -1,0 +1,759 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+    <title>Maghreb</title>
+    <style>
+        .burgerMenu {
+            visibility: hidden
+        }
+
+        .overlay {
+            opacity: 0
+        }
+
+        .animatedButton__contentHovered {
+            transform: translateY(100%)
+        }
+    </style>
+</head>
+
+<body class="homePage">
+    <header class="homePage__header header container container__hiddenOverflow">
+        <div class="header__inner js-header">
+            <div class="container__row js-header-container-row">
+                <div class="header__content">
+                    <div class="header__left">
+                        <a href="./index.html" class="header__logo">
+                            <svg class="header__logoIcon">
+                                <use href="./spritemap.svg#icon-logo" />
+                            </svg>
+                        </a>
+                        <nav>
+                            <a href="./catalog.html" class="header__catalogLink">
+                                <p class="header__link"> Продукция</p>
+                                <svg class="header__catalogIcon">
+                                    <use href="./spritemap.svg#icon-dots-icon" />
+                                </svg>
+                            </a>
+                        </nav>
+                    </div>
+                    <nav class="header__center">
+                        <!-- <a href="./team.html" class="header__link">Команда</a> -->
+                        <a href="./export-calender.html" class="header__link">Календарь экспорта</a>
+                        <a href="./news.html" class="header__link">Новости</a>
+                        <a href="./contacts.html" class="header__link">Контакты</a>
+                    </nav>
+                    <div class="header__right">
+                        <div class="header__langs">
+                            <a href="#" class="header__lang">EN</a>
+                            <a href="#" class="header__lang header__lang--active">RU</a>
+                        </div>
+                        <div class="header__button">
+                            <div class="animatedButton buttonWrapper">
+                                <button class="animatedButton__content button js-open-modal"
+                                    data-modal="application">Связаться с нами</button>
+                                <button class="animatedButton__contentHovered button js-open-modal"
+                                    data-modal="application">Связаться с нами</button>
+                            </div>
+                        </div>
+                        <div class="header__burgerButton js-burger-menu-button">
+                            <span class="header__burgerIcon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="burgerMenu container js-burger-menu">
+                    <div class="container__row">
+                        <div class="burgerMenu__innerWrapper">
+                            <div class="burgerMenu__inner">
+                                <div class="burgerMenu__content">
+                                    <nav class="burgerMenu__nav">
+                                        <div><a href="./catalog.html" class="burgerMenu__link">Продукция</a></div>
+                                        <!-- <div><a href="./team.html" class="burgerMenu__link">Команда</a></div> -->
+                                        <div><a href="./export-calender.html" class="burgerMenu__link">Календарь
+                                                экспорта</a></div>
+                                        <div><a href="./news.html" class="burgerMenu__link">Новости</a></div>
+                                        <div><a href="./contacts.html" class="burgerMenu__link">Контакты</a></div>
+                                    </nav>
+                                    <div class="burgerMenu_contacts">
+                                        <div class="burgerMenu__phoneWrapper">
+                                            <p class="burgerMenu_contactsTitle">Телефон</p>
+                                            <a href="tel:+971(50)3653964" class="burgerMenu__tel">+971 (50) 365 39
+                                                64</a>
+                                        </div>
+                                        <div class="burgerMenu__emailWrapper">
+                                            <p class="burgerMenu_contactsTitle">Почта</p>
+                                            <a href="info@maghreb.ae" class="burgerMenu__email">info@maghreb.ae</a>
+                                        </div>
+                                        <div class="burgerMenu__socials">
+                                            <a href="#" target="_blank" class="burgerMenu__socialLink">
+                                                <svg class="burgerMenu__socialIcon">
+                                                    <use href="./spritemap.svg#icon-tg-icon" />
+                                                </svg>
+                                            </a>
+                                            <a href="#" target="_blank" class="burgerMenu__socialLink">
+                                                <svg class="burgerMenu__socialIcon">
+                                                    <use href="./spritemap.svg#icon-fb-icon" />
+                                                </svg>
+                                            </a>
+                                            <a href="#" target="_blank" class="burgerMenu__socialLink">
+                                                <svg class="burgerMenu__socialIcon">
+                                                    <use href="./spritemap.svg#icon-vk-icon" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="burgerMenu__button">
+                                    <div class="animatedButton buttonWrapper">
+                                        <button class="animatedButton__content button js-open-modal"
+                                            data-modal="application">Связаться с нами</button>
+                                        <button class="animatedButton__contentHovered button js-open-modal"
+                                            data-modal="application">Связаться с нами</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="homePage__firstScreen firstScreen container">
+            <div class="container__row">
+                <div class="firstScreen__inner">
+                    <div class="firstScreen__top">
+                        <h1 class="firstScreen__title title js-title" data-class="title--shown">
+                            Cвежие фрукты <br />и овощи из Марокко
+                        </h1>
+                        <p class="firstScreen__description js-text-lines" data-class="lines--shown">
+                            Мы выращиваем овощи и фрукты на своих плантациях <br class="firstScreen__tabletHidden" />
+                            в Марокко и поставляем их по всему миру
+                        </p>
+                    </div>
+                    <div class="firstScreen__imgAndButton">
+                        <div class="firstScreen__imgWrapper imageWrapper">
+                            <picture>
+                                <source media="(max-width: 480px)"
+                                    srcset="/img/first-screens/home/firstscreen-mobile.webp, /img/first-screens/home/firstscreen-mobile-2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(max-width: 480px)"
+                                    srcset="/img/first-screens/home/firstscreen-mobile.jpg, /img/first-screens/home/firstscreen-mobile-2x.jpg 2x">
+                                <source media="(max-width: 950px)"
+                                    srcset="/img/first-screens/home/firstscreen-tablet.webp, /img/first-screens/home/firstscreen-tablet-2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(max-width: 950px)"
+                                    srcset="/img/first-screens/home/firstscreen-tablet.jpg, /img/first-screens/home/firstscreen-tablet-2x.jpg 2x">
+                                <source media="(max-width: 1700px)"
+                                    srcset="/img/first-screens/home/firstscreen-desktop.webp, /img/first-screens/home/firstscreen-desktop-2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(max-width: 1700px)"
+                                    srcset="/img/first-screens/home/firstscreen-desktop.jpg, /img/first-screens/home/firstscreen-desktop-2x.jpg 2x">
+                                <source
+                                    srcset="/img/first-screens/home/firstscreen.webp, /img/first-screens/home/firstscreen-2x.webp 2x"
+                                    type="image/webp">
+                                <source srcset="/img/firstscreen.jpg, /img/firstscreen-2x.jpg 2x">
+                                <img class="firstScreen__img image image__zoom js-image" data-class="image__zoom--out"
+                                    src="/img/first-screens/home/firstscreen.jpg" alt="Oranges" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="firstScreen__button">
+                            <button class="roundButton js-open-modal" data-modal="application">
+                                <p class="roundButton__text">Заказать <br />звонок</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homePage__production production container container__hiddenOverflow">
+            <div class="container__row">
+                <div class="production__inner">
+                    <div class="production__top">
+                        <h2 class="production__title title js-title" data-class="title--shown">Наша продукция</h2>
+                        <div class="production__filters filters">
+                            <div class="filters__inner">
+                                <div class="filters__list js-products-filter">
+                                    <button class="filters__button filterButton filterButton--active"
+                                        data-type='fruits'>Фрукты</button>
+                                    <button class="filters__button filterButton" data-type='vegetables'>Овощи</button>
+                                    <button class="filters__button filterButton" data-type='fish'>Рыба</button>
+                                    <button class="filters__button filterButton" data-type='timber'>Древесины</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./catalog.html" class="production__link">
+                            <p class="production__linkTitle">Перейти в каталог</p>
+                            <button class="production__linkIcon arrowButton">
+                                <svg class="arrowButton__icon">
+                                    <use href="./spritemap.svg#icon-arrow-icon" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="production__slider">
+                        <div class="slider">
+                            <div class="slider__button slider__button--left js-products-slider-prev">
+                                <button class="sliderButton">
+                                    <svg class="sliderButton__icon sliderButton__icon--back">
+                                        <use href="./spritemap.svg#icon-slider-arrow-back" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="slider__inner">
+                                <div class="slider__content js-products-slider">
+                                    <div class="swiper-wrapper">
+                                        <div data-type="fruits" class="slider__item swiper-slide">
+                                            <div class="productItem">
+                                                <a href="./product.html" class="productItem__inner">
+                                                    <div class="productItem__imgWrapper">
+                                                        <img class="productItem__img productItem__img--smaller"
+                                                            alt="Orange" src="/public/products/product-2.png">
+                                                    </div>
+                                                    <div class="productItem__data">
+                                                        <h3 class="productItem__title">Апельсин Навел</h3>
+                                                        <p class="productItem__description">Марокко. Плоды крупного
+                                                            размера,
+                                                            слегка вытянутые, легко чистится, без косточек</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div data-type="vegetables" class="slider__item swiper-slide">
+                                            <div class="productItem">
+                                                <a href="./product.html" class="productItem__inner">
+                                                    <div class="productItem__imgWrapper">
+                                                        <img class="productItem__img productItem__img--smaller"
+                                                            alt="Orange" src="/public/products/product-1.png">
+                                                    </div>
+                                                    <div class="productItem__data">
+                                                        <h3 class="productItem__title">Мандарин Нова</h3>
+                                                        <p class="productItem__description">Марокко. Слегка сплющенная
+                                                            форма,
+                                                            крупный размер, кожура оранжевого цвета, легко чистится, без
+                                                            косточек.</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div data-type="fish" class="slider__item swiper-slide">
+                                            <div class="productItem">
+                                                <a href="./product.html" class="productItem__inner">
+                                                    <div class="productItem__imgWrapper">
+                                                        <img class="productItem__img productItem__img--smaller"
+                                                            alt="Orange" src="/public/products/product-3.png">
+                                                    </div>
+                                                    <div class="productItem__data">
+                                                        <h3 class="productItem__title"> Лимон</h3>
+                                                        <p class="productItem__description">Марокко. Слегка сплющенная
+                                                            форма,
+                                                            крупный размер, кожура оранжевого цвета, легко чистится, без
+                                                            косточек.</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div data-type="timber" class="slider__item swiper-slide">
+                                            <div class="productItem">
+                                                <a href="./product.html" class="productItem__inner">
+                                                    <div class="productItem__imgWrapper">
+                                                        <img class="productItem__img productItem__img--smaller"
+                                                            alt="Orange" src="/public/products/product-1.png">
+                                                    </div>
+                                                    <div class="productItem__data">
+                                                        <h3 class="productItem__title">Мандарин Нова</h3>
+                                                        <p class="productItem__description">Марокко. Слегка сплющенная
+                                                            форма,
+                                                            крупный размер, кожура оранжевого цвета, легко чистится, без
+                                                            косточек.</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__button slider__button--right js-products-slider-next">
+                                <button class="sliderButton">
+                                    <svg class="sliderButton__icon sliderButton__icon--next">
+                                        <use href="./spritemap.svg#icon-slider-arrow-next" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="production__tabletButton">
+                        <div class="animatedButton buttonWrapper">
+                            <a href="./catalog.html"
+                                class="animatedButton__content button button--extraSmaller button--border">Перейти в
+                                каталог</a>
+                            <a href="./catalog.html"
+                                class="animatedButton__contentHovered button button--extraSmaller button--border">Перейти
+                                в каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homePage__principles principles container js-principles">
+            <div class="container__row">
+                <div class="principles__inner js-principles-inner">
+                    <div class="principles__content">
+                        <h2 class="principles__title title js-title" data-class="title--shown">Принципы нашей работы
+                        </h2>
+                        <div class="principles__slider">
+                            <div class="principles__progressBar">
+                                <div class="principles__progressFiller js-principles-bar"></div>
+                            </div>
+                            <div class="principles__list js-principles-list">
+                                <div class="principles__listItem principles__listItem--highlight js-principles-item">
+                                    <p class="principles__number">01</p>
+                                    <p class="principles__text js-text-lines" data-class="lines--shown">Мы выстраиваем
+                                        долгосрочные
+                                        и прозрачные отношения с клиентом
+                                        без посредников</p>
+                                </div>
+                                <div class="principles__listItem js-principles-item">
+                                    <p class="principles__number">02</p>
+                                    <p class="principles__text js-text-lines" data-class="lines--shown">Выращиваем
+                                        продукцию
+                                        на собственных плантациях</p>
+                                </div>
+                                <div class="principles__listItem js-principles-item">
+                                    <p class="principles__number">03</p>
+                                    <p class="principles__text js-text-lines" data-class="lines--shown">Всегда только
+                                        высокое качество продуктов</p>
+                                </div>
+                                <div class="principles__listItem js-principles-item">
+                                    <p class="principles__number">04</p>
+                                    <p class="principles__text js-text-lines" data-class="lines--shown">Наши торговые
+                                        представительства находятся в разных
+                                        странах</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="principles__imgWrapper imageWrapper js-image-wrapper js-principles-image" data-class="imageWrapper--open">
+                        <picture>
+                            <source srcset="/img/principles.webp, /img/principles-2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 1900px)" srcset="/img/principles.jpg, /img/principles-2x.jpg 2x">
+                            <img class="principles__img image image__3d js-image" data-class="image__3d--out"
+                                src="/img/principles.jpg" alt="Oranges" loading="lazy">
+                        </picture>
+                        <picture>
+                            <source srcset="/img/principles.webp, /img/principles-2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 1900px)" srcset="/img/principles.jpg, /img/principles-2x.jpg 2x">
+                            <img class="principles__img image image__3d js-image" data-class="image__3d--out"
+                                src="/img/principles.jpg" alt="Oranges" loading="lazy">
+                        </picture>
+                        <picture>
+                            <source srcset="/img/principles.webp, /img/principles-2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 1900px)" srcset="/img/principles.jpg, /img/principles-2x.jpg 2x">
+                            <img class="principles__img image image__3d js-image" data-class="image__3d--out"
+                                src="/img/principles.jpg" alt="Oranges" loading="lazy">
+                        </picture>
+                        <picture>
+                            <source srcset="/img/principles.webp, /img/principles-2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 1900px)" srcset="/img/principles.jpg, /img/principles-2x.jpg 2x">
+                            <img class="principles__img image image__3d js-image" data-class="image__3d--out"
+                                src="/img/principles.jpg" alt="Oranges" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homePage__advantages advantages container container__hiddenOverflow">
+            <div class="container__row">
+                <div class="advantages__inner">
+                    <h2 class="advantages__title title js-title" data-class="title--shown">Сотрудничество с нами</h2>
+                    <div class="advantages__content js-advantages-slider">
+                        <div class="swiper-wrapper">
+                            <div class="advantages__item swiper-slide">
+                                <div class="advantages__iconWrapper">
+                                    <svg class="advantages__icon">
+                                        <use href="./spritemap.svg#icon-advantages-1" />
+                                    </svg>
+                                </div>
+                                <p class="advantages__description">
+                                    Оперативные решения <br />
+                                    на всех этапах цепи поставок
+                                </p>
+                            </div>
+                            <div class="advantages__item swiper-slide">
+                                <div class="advantages__iconWrapper">
+                                    <svg class="advantages__icon">
+                                        <use href="./spritemap.svg#icon-advantages-2" />
+                                    </svg>
+                                </div>
+                                <p class="advantages__description">
+                                    Развитый менеджмент стандартов качества
+                                </p>
+                            </div>
+                            <div class="advantages__item swiper-slide">
+                                <div class="advantages__iconWrapper">
+                                    <svg class="advantages__icon">
+                                        <use href="./spritemap.svg#icon-advantages-3" />
+                                    </svg>
+                                </div>
+                                <p class="advantages__description">
+                                    Содействие в процедуре таможенного оформления
+                                </p>
+                            </div>
+                            <div class="advantages__item swiper-slide">
+                                <div class="advantages__iconWrapper">
+                                    <svg class="advantages__icon">
+                                        <use href="./spritemap.svg#icon-advantages-4" />
+                                    </svg>
+                                </div>
+                                <p class="advantages__description">
+                                    Индивидуальные условия поставок и оплаты
+                                </p>
+                            </div>
+                            <div class="advantages__item swiper-slide">
+                                <div class="advantages__iconWrapper">
+                                    <svg class="advantages__icon">
+                                        <use href="./spritemap.svg#icon-advantages-5" />
+                                    </svg>
+                                </div>
+                                <p class="advantages__description">
+                                    Упаковка из гофрокартона <br />
+                                    и приват-бренды
+                                </p>
+                            </div>
+                            <div class="advantages__item swiper-slide advantages__item--green advantages__item--center">
+                                <div class="advantages__companyData">
+                                    <p class="advantages__companyName">Maghreb</p>
+                                    <p class="advantages__companyDescription">International trade</p>
+                                </div>
+                                <div class="animatedButton animatedButton--white buttonWrapper">
+                                    <a href="./contacts.html"
+                                        class="animatedButton__content advantages__button button button--white"> Наши
+                                        контакты</a>
+                                    <a href="./contacts.html"
+                                        class="animatedButton__contentHovered advantages__button button button--white">Наши
+                                        контакты</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages__contentProgress">
+                        <div class="advantages__contentProgressBar js-advantages-slider-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homePage__news news container container__hiddenOverflow">
+            <div class="container__row">
+                <div class="news__inner">
+                    <div class="news__top">
+                        <h2 class="news__header title js-title" data-class="title--shown">Новости</h2>
+                        <div class="news__button">
+                            <div class="animatedButton animatedButton--transparent buttonWrapper">
+                                <a href="./news.html"
+                                    class="animatedButton__content button button--transparent button--border button--desktopSmaller">
+                                    Все новости
+                                </a>
+                                <a href="./news.html"
+                                    class="animatedButton__contentHovered button button--transparent button--border button--desktopSmaller">
+                                    Все новости
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__content js-news-slider">
+                        <div class="swiper-wrapper">
+                            <a href="./single-news.html" class="news__item swiper-slide">
+                                <div class="news__imgWrapper">
+                                    <img class="news__img" src="/public/news/home/news-1.jpg" alt="News">
+                                </div>
+                                <time class="news__date" datetime="2023-02-23">12.02.2023</time>
+                                <h3 class="news__title">Lorem ipsum dolor sit amet</h3>
+                                <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    rcitation
+                                    ullamco l</p>
+                            </a>
+                            <a href="./single-news.html" class="news__item swiper-slide">
+                                <div class="news__imgWrapper">
+                                    <img class="news__img" src="/public/news/home/news-2.jpg" alt="News">
+                                </div>
+                                <time class="news__date" datetime="2023-02-23">12.02.2023</time>
+                                <h3 class="news__title">Lorem ipsum dolor sit amet</h3>
+                                <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    rcitation
+                                    ullamco l</p>
+                            </a>
+                            <a href="./single-news.html" class="news__item swiper-slide">
+                                <div class="news__imgWrapper">
+                                    <img class="news__img" src="/public/news/home/news-3.jpg" alt="News">
+                                </div>
+                                <time class="news__date" datetime="2023-02-23">12.02.2023</time>
+                                <h3 class="news__title">Lorem ipsum dolor sit amet</h3>
+                                <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    rcitation
+                                    ullamco l</p>
+                            </a>
+                            <a href="./single-news.html" class="news__item swiper-slide">
+                                <div class="news__imgWrapper">
+                                    <img class="news__img" src="/public/news/home/news-4.jpg" alt="News">
+                                </div>
+                                <time class="news__date" datetime="2023-02-23">12.02.2023</time>
+                                <h3 class="news__title">Lorem ipsum dolor sit amet</h3>
+                                <p class="news__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    rcitation
+                                    ullamco l</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news__contentProgress">
+                        <div class="news__contentProgressBar js-news-slider-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homePage__form formSection container">
+            <div class="container__row">
+                <div class="formSection__inner">
+                    <div class="formSection__content">
+                        <h2 class="formSection__header title js-title" data-class="title--shown">Свяжитесь с нами</h2>
+                        <div class="formSection__form">
+                            <form action="#" class="form">
+                                <div class="form__fields">
+                                    <div class="form__nameAndPhoneInputs">
+                                        <input class="form__input" data-validation="required" type="text" name="name"
+                                            placeholder="Имя" />
+                                        <input class="form__input" data-validation="required" type="text" name="tel"
+                                            placeholder="Телефон" />
+                                    </div>
+                                    <input class="form__input" data-validation="email" type="text" name="email"
+                                        placeholder="Электронная почта" />
+                                    <textarea class="form__input form__textarea" type="text" name="message"
+                                        placeholder="Сообщение (не обязательно)"></textarea>
+                                </div>
+                                <div class="form__checkbox">
+                                    <input class="form__checkboxInput" data-validation="checkbox" type="checkbox"
+                                        id="agreementHome" checked />
+                                    <label class="form__checkboxLabel" for="agreementHome">
+                                        <div class="form__checkboxBox">
+                                            <div class="form__checkboxMark"></div>
+                                        </div>
+                                        <p class="form__checkboxText">Нажав на кнопку, вы соглашаетесь на обработку
+                                            персональных данных</p>
+                                    </label>
+                                </div>
+                                <div class="form__button">
+                                    <div class="animatedButton buttonWrapper">
+                                        <input type="submit" data-success="Sent"
+                                            class="animatedButton__content button button--smaller"
+                                            value="Отправить заявку">
+                                        <input type="submit" data-success="Sent"
+                                            class="animatedButton__contentHovered button button--smaller"
+                                            value="Отправить заявку" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="formSection__imgWrapper">
+                        <picture>
+                            <source srcset="/img/formsection-bg.webp, /img/formsection-bg-2x.webp 2x" type="image/webp">
+                            <source srcset="/img/formsection-bg.jpg, /img/formsection-bg-2x.jpg 2x">
+                            <img class="formSection__img" src="/img/formsection-bg.jpg" alt="Oranges" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="container__row">
+            <div class="footer__mainWrapper">
+                <div class="footer__main">
+                    <div class="footer__logoWrapper">
+                        <a href="./index.html">
+                            <svg class="footer__logoIcon">
+                                <use href="./spritemap.svg#icon-logo" />
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="footer__nav">
+                        <div class="footer__navColumn">
+                            <a href="./catalog.html" class="footer__link">Каталог</a>
+                            <a href="./news.html" class="footer__link">Новости</a>
+                            <a href="./export-calender.html" class="footer__link">Календарь экспорта</a>
+                        </div>
+                        <div class="footer__navColumn">
+                            <a href="#" class="footer__link">Условия использования</a>
+                            <a href="#" class="footer__link">Политика конфиденциальности</a>
+                            <a href="./contacts.html" class="footer__link">Контакты</a>
+                        </div>
+                    </nav>
+                    <div class="footer__subscribe">
+                        <p class="footer__subscribeText">Не пропустите наши обновления<br />
+                            Подпишитесь на нашу рассылку</p>
+                        <form action="#" class="footer__subscribeForm" id="subscribe">
+                            <input class="footer__subscribeInput" data-validation="email" type="text" name="email"
+                                placeholder="Электронная почта" />
+                            <button type="submit" class="arrowButton arrowButton--bigger">
+                                <svg class="arrowButton__icon">
+                                    <use href="./spritemap.svg#icon-arrow-icon" />
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="footer__socials">
+                            <a href="#" target="_blank" class="footer__socialLink">
+                                <svg class="footer__socialIcon">
+                                    <use href="./spritemap.svg#icon-tg-icon" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="footer__socialLink">
+                                <svg class="footer__socialIcon">
+                                    <use href="./spritemap.svg#icon-fb-icon" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="footer__socialLink">
+                                <svg class="footer__socialIcon">
+                                    <use href="./spritemap.svg#icon-vk-icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottomWrapper">
+            <div class="container__row">
+                <div class="footer__bottom">
+                    <p>2023 © Maghreb</p>
+                    <a class="footer__madeLink" href="https://finik.org/" target="_blank">Сайт сделан в <span
+                            class="footer__madeLink--highlight">FINIK</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="modals js-modals">
+        <div class="modals__item" id="application">
+            <div class="modals__content applicationForm">
+                <div class="applicationForm__close modals__close js-close-modals">
+                    <button class="closeButton"></button>
+                </div>
+                <div class="applicationForm__inner">
+                    <h2 class="applicationForm__title">Оставить заявку</h2>
+                    <p class="applicationForm__description">Заполните форму и наш менеджер свяжется
+                        с Вами в ближайшее время</p>
+                    <div class="applicationForm__form">
+                        <form action="#" class="form">
+                            <div class="form__fields">
+                                <div class="form__nameAndPhoneInputs">
+                                    <input class="form__input" data-validation="required" type="text" name="name"
+                                        placeholder="Имя" />
+                                    <input class="form__input" data-validation="required" type="text" name="tel"
+                                        placeholder="Телефон" />
+                                </div>
+                                <input class="form__input" data-validation="email" type="text" name="email"
+                                    placeholder="Электронная почта" />
+                                <textarea class="form__input form__textarea" type="text" name="message"
+                                    placeholder="Сообщение (не обязательно)"></textarea>
+                            </div>
+                            <div class="form__checkbox">
+                                <input class="form__checkboxInput" data-validation="checkbox" type="checkbox"
+                                    id="agreementApplication" checked />
+                                <label class="form__checkboxLabel" for="agreementApplication">
+                                    <div class="form__checkboxBox">
+                                        <div class="form__checkboxMark"></div>
+                                    </div>
+                                    <p class="form__checkboxText">Нажав на кнопку, вы соглашаетесь на обработку
+                                        персональных данных</p>
+                                </label>
+                            </div>
+                            <div class="form__button form__button--center">
+                                <div class="animatedButton buttonWrapper">
+                                    <input type="submit" data-success="Sent"
+                                        class="animatedButton__content button button--smaller" value="Отправить заявку">
+                                    <input type="submit" data-success="Sent"
+                                        class="animatedButton__contentHovered button button--smaller"
+                                        value="Отправить заявку" />
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modals__item" id="thanksApplication">
+            <div class="modals__content thanks">
+                <div class="thanks__close modals__close js-close-modals">
+                    <button class="closeButton"></button>
+                </div>
+                <div class="thanks__inner">
+                    <h1 class="thanks__header">Спасибо <br />за заявку</h1>
+                    <p class="thanks__description">Наш менеджер скоро свяжется с вами</p>
+                    <div class="animatedButton buttonWrapper">
+                        <button
+                            class="animatedButton__content button button--wider button--smaller js-close-modals">Закрыть</button>
+                        <button
+                            class="animatedButton__contentHovered button button--wider button--smaller js-close-modals">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modals__item" id="thanksSubscribe">
+            <div class="modals__content thanks">
+                <div class="thanks__close modals__close js-close-modals">
+                    <button class="closeButton"></button>
+                </div>
+                <div class="thanks__inner">
+                    <h1 class="thanks__header">Спасибо <br />за подписку</h1>
+                    <p class="thanks__description">Первое письмо уже на вашей почте</p>
+                    <div class="animatedButton buttonWrapper">
+                        <button
+                            class="animatedButton__content button button--wider button--smaller js-close-modals">Закрыть</button>
+                        <button
+                            class="animatedButton__contentHovered button button--wider button--smaller js-close-modals">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container preloader js-preloader">
+        <div class="container__row preloader__row">
+          <div class="preloader__wrapper">
+            <div class="preloader__text js-preloader-text">
+              <div class="preloader__number">
+                <span class="preloader__numberDigit js-current-percent">0</span>
+              </div>
+              <div class="preloader__percent">%</div>
+            </div>
+            <div class="preloader__progressLine">
+              <div class="preloader__progressLineCurrent js-preloader-progress-line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <section class="cookie js-cookie">
+        <p class="cookie__text">
+            Our site uses <a href="#" class="cookie__link">cookies</a>
+        </p>
+        <div class="animatedButton buttonWrapper">
+            <button
+                class="animatedButton__content cookie__button button button--orange button--wider js-cookie-accept">Okay</button>
+            <button
+                class="animatedButton__contentHovered cookie__button button button--orange button--wider js-cookie-acceptr">Okay</button>
+        </div>
+    </section>
+    <div class="overlay js-overlay"></div>
+</body>
+
+</html>

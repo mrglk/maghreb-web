@@ -1,0 +1,67 @@
+.homePage__header {
+    margin-bottom: 46px;
+}
+
+.homePage__firstScreen,
+.homePage__production,
+.homePage__principles,
+.homePage__advantages,
+.homePage__news {
+    margin-bottom: 150px;
+}
+
+.homePage__form {
+    margin-bottom: 180px;
+}
+
+@media screen and (max-width: 1700px) {
+    .homePage__header {
+        margin-bottom: 40px;
+    }
+
+    .homePage__firstScreen,
+    .homePage__production,
+    .homePage__principles,
+    .homePage__advantages,
+    .homePage__news {
+        margin-bottom: 130px;
+    }
+
+    .homePage__form {
+        margin-bottom: 160px;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .homePage__header {
+        margin-bottom: 50px;
+    }
+
+    .homePage__firstScreen,
+    .homePage__production,
+    .homePage__principles,
+    .homePage__advantages,
+    .homePage__news,
+    .homePage__form {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homePage__header {
+        margin-bottom: 40px;
+    }
+
+    .homePage__firstScreen {
+        margin-bottom: 47px;
+    }
+
+    .homePage__production,
+    .homePage__principles,
+    .homePage__advantages,
+    .homePage__news,
+    .homePage__form {
+        margin-bottom: 70px;
+    }
+}

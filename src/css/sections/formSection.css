@@ -1,0 +1,148 @@
+.formSection__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--orange);
+    border-radius: 24px;
+    overflow: hidden;
+    max-height: 700px;
+}
+
+.formSection__header {
+    color: var(--white);
+    margin: 0 0 50px 0;
+}
+
+.formSection__content {
+    width: 50%;
+    margin: 80px 20px 80px 90px;
+}
+
+.formSection__content--onlyForm {
+    width: 100%;
+    margin-right: 90px;
+}
+
+.formSection__form {
+    max-width: 607px;
+    width: 100%;
+}
+
+.formSection__form--withoutMaxWidth {
+    max-width: 100%;
+}
+
+.formSection__imgWrapper {
+    position: absolute;
+    right: -209px;
+    top: -297px;
+}
+
+.formSection__img {
+    width: 1106px;
+    height: 1106px;
+}
+
+@media screen and (max-width: 1700px) {
+    .formSection__inner {
+        border-radius: 16px;
+        max-height: 640px;
+    }
+
+    /* .formSection__inner--lessHeight{
+        max-height: 100%;
+    } */
+
+    .formSection__header {
+        margin-bottom: 35px;
+    }
+
+    .formSection__content {
+        margin: 70px 10px 65px 70px;
+    }
+
+    .formSection__content--onlyForm {
+        /* margin-right: 70px; */
+        margin: 70px 70px 50px 70px;
+        /* margin: 80px 90px 80px 90px; */
+    }
+    
+    .formSection__imgWrapper {
+        right: -373.8px;
+        top: -376px;
+    }
+
+    .formSection__img {
+        width: 1054px;
+        height: 1054px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .formSection__imgWrapper {
+        right: -392.8px;
+        top: -228px;
+    }
+
+    .formSection__img {
+        width: 900px;
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .formSection__imgWrapper {
+        right: -386.8px;
+        top: -203px;
+    }
+
+    .formSection__img {
+        width: 850px;
+        height: 850px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .formSection__content {
+        width: 40%;
+    }
+
+    .formSection__content--onlyForm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .formSection__inner {
+        justify-content: center;
+        max-height: none;
+        min-height: 516px;
+    }
+
+    .formSection__header {
+        text-align: center;
+    }
+
+    .formSection__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 45px 30px 50px 30px;
+    }
+
+    .formSection__form {
+        max-width: 100%;
+    }
+
+    .formSection__imgWrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .formSection__content {
+        margin: 50px 20px 40px 20px;
+    }
+}

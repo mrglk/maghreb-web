@@ -1,0 +1,89 @@
+.contactsPage__inner {
+    position: relative;
+    overflow: hidden;
+    /* z-index: 2; */
+}
+
+.contactsPage__inner:after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -149.6px;
+    left: 0;
+    width: 862px;
+    height: 862px;
+    z-index: 1;
+    user-select: none;
+
+    background-image: url("./img/circle-bg.png");
+    background-repeat: no-repeat;
+}
+
+.contactsPage__header {
+    margin-bottom: 40px;
+}
+
+.contactsPage__breadcrumbs {
+    margin-bottom: 25px;
+}
+
+.contactsPage__content {
+    margin-bottom: 67px;
+}
+
+.contactsPage__desktopHidden {
+    display: none;
+}
+
+@media screen and (max-width: 1700px) {
+    .contactsPage__breadcrumbs {
+        margin-bottom: 20px;
+    }
+    
+    .contactsPage__inner:after {
+        bottom: -109.6px;
+        width: 762px;
+        height: 762px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contactsPage__inner:after {
+        bottom: -109.4px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .contactsPage__inner:after {
+        top: 240.1px;
+        left: -190px;
+    }
+    .contactsPage__desktopHidden {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contactsPage__header {
+        margin-bottom: 30px;
+    }
+    
+    .contactsPage__content {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contactsPage__inner:after {
+        top: 220.1px;
+        left: -190px;
+        width: 562px;
+    height: 562px;
+        background-size: 562px;
+    }
+
+    .contactsPage__content {
+        margin-bottom: 70px;
+    }
+    
+}

@@ -1,0 +1,41 @@
+.sliderButton {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    width: 46px;
+    height: 46px;
+    border-radius: 200px;
+    border: none;
+
+    transition: background-color 300ms ease;
+}
+
+.sliderButton:hover,
+.sliderButton:active {
+    background-color: var(--black);
+}
+
+.sliderButton__icon {
+    width: 11px;
+    height: 11px;
+}
+
+@media screen and (max-width: 1700px) {
+    .sliderButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sliderButton__icon {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .sliderButton:hover {
+        background-color: var(--green);
+    }
+}

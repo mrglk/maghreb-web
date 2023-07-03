@@ -1,0 +1,64 @@
+.animatedButton {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.animatedButton__content,
+.animatedButton__contentHovered {
+  transition: transform 200ms ease, background-color 200ms ease,
+    color 200ms ease;
+  /* width: 100%; */
+}
+
+.animatedButton .animatedButton__content {
+  transition: transform 200ms ease;
+}
+
+.animatedButton .animatedButton__contentHovered {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(100%);
+  background-color: var(--black);
+
+  transition: transform 200ms ease;
+}
+
+.animatedButton:hover .animatedButton__content {
+  transform: translateY(-100%);
+}
+
+.animatedButton:hover .animatedButton__contentHovered {
+  transform: translateY(0%);
+}
+
+.animatedButton--white .animatedButton__contentHovered {
+  color: var(--white);
+}
+
+.animatedButton--transparent .animatedButton__contentHovered {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+}
+
+
+@media screen and (max-width: 960px) {
+  .animatedButton:hover .animatedButton__content {
+    transform: none
+  }
+
+  .animatedButton:hover .animatedButton__contentHovered {
+    transform: none;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .animatedButton {
+    width: 100%;
+  }
+}

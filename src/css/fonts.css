@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'JannaLT';
+    src: url('./fonts/JannaLT/JannaLT-Bold.eot');
+    src: url('./fonts/JannaLT/JannaLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/JannaLT/JannaLT-Bold.woff2') format('woff2'),
+        url('./fonts/JannaLT/JannaLT-Bold.woff') format('woff'),
+        url('./fonts/JannaLT/JannaLT-Bold.ttf') format('truetype'),
+        url('./fonts/JannaLT/JannaLT-Bold.svg#JannaLT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JannaLT';
+    src: url('./fonts/JannaLT/JannaLT-Regular.eot');
+    src: url('./fonts/JannaLT/JannaLT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/JannaLT/JannaLT-Regular.woff2') format('woff2'),
+        url('./fonts/JannaLT/JannaLT-Regular.woff') format('woff'),
+        url('./fonts/JannaLT/JannaLT-Regular.ttf') format('truetype'),
+        url('./fonts/JannaLT/JannaLT-Regular.svg#JannaLT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JannaLT';
+    src: url('./fonts/JannaLT/JannaLT-Bold_1.eot');
+    src: url('./fonts/JannaLT/JannaLT-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/JannaLT/JannaLT-Bold_1.woff2') format('woff2'),
+        url('./fonts/JannaLT/JannaLT-Bold_1.woff') format('woff'),
+        url('./fonts/JannaLT/JannaLT-Bold_1.ttf') format('truetype'),
+        url('./fonts/JannaLT/JannaLT-Bold_1.svg#JannaLT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JannaLT';
+    src: url('./fonts/JannaLT/JannaLT-Regular_1.eot');
+    src: url('./fonts/JannaLT/JannaLT-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/JannaLT/JannaLT-Regular_1.woff2') format('woff2'),
+        url('./fonts/JannaLT/JannaLT-Regular_1.woff') format('woff'),
+        url('./fonts/JannaLT/JannaLT-Regular_1.ttf') format('truetype'),
+        url('./fonts/JannaLT/JannaLT-Regular_1.svg#JannaLT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* @font-face {
+    font-family: 'JannaLT';
+    src: url('./fonts/JannaLT/JannaLT-Regular.eot');
+    src: url('./fonts/JannaLT/JannaLT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/JannaLT/JannaLT-Regular.woff2') format('woff2'),
+        url('./fonts/JannaLT/JannaLT-Regular.woff') format('woff'),
+        url('./fonts/JannaLT/JannaLT-Regular.ttf') format('truetype'),
+        url('./fonts/JannaLT/JannaLT-Regular.svg#JannaLT-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JannaLT';
+    src: url('./fonts/JannaLT/JannaLT-Bold.eot');
+    src: url('./fonts/JannaLT/JannaLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/JannaLT/JannaLT-Bold.woff2') format('woff2'),
+        url('./fonts/JannaLT/JannaLT-Bold.woff') format('woff'),
+        url('./fonts/JannaLT/JannaLT-Bold.ttf') format('truetype'),
+        url('./fonts/JannaLT/JannaLT-Bold.svg#JannaLT-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+} */

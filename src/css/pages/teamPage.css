@@ -1,0 +1,38 @@
+.teamPage__header {
+    margin-bottom: 40px;
+}
+
+.teamPage__breadcrumbs {
+    margin-bottom: 25px;
+}
+
+.teamPage__team {
+    margin-bottom: 180px;
+}
+
+@media screen and (max-width: 1700px) {
+    .teamPage__breadcrumbs {
+        margin-bottom: 20px;
+    }
+
+    .teamPage__team {
+        margin-bottom: 160px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .teamPage__header {
+        margin-bottom: 30px;
+    }
+    
+    .teamPage__team {
+        margin-bottom: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .teamPage__team {
+        margin-bottom: 70px;
+    }
+}

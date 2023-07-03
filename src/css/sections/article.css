@@ -1,0 +1,229 @@
+.article__inner {
+    width: 100%;
+}
+
+.article__firstScreen {
+    margin-bottom: 100px;
+}
+
+.article__contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.article__content {
+    display: flex;
+    width: 85%;
+}
+
+.article__left {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    border-right: 1px solid #0000001A;
+    padding-top: 30px;
+    margin-right: 40px;
+}
+
+.article__date {
+    font-size: 18px;
+    color:var(--black);
+    opacity: 0.5;
+    border-bottom: 1px solid #0000001A;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.article__shares {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+.article__shareLink {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0000001A;
+    border-radius: 200px;
+    width: 56px;
+    height: 56px;
+    transition: border-color 200ms ease, background-color 200ms ease;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+.article__shareLink:hover {
+    border-color: var(--orange);
+    background-color: var(--orange);
+}
+
+.article__shareLink:not(:last-child) {
+    margin-right: 20px;
+}
+
+.article__shareIcon {
+    width: 25px;
+    height: 25px;
+    fill: var(--black);
+    transition: fill 200ms ease;
+}
+
+.article__shareLink:hover .article__shareIcon {
+    fill: var(--white);
+}
+
+.article__right {
+    width: 70%;
+}
+
+.article__text {
+    text-align: justify;
+    width: 87%;
+}
+
+.article__paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
+
+.article__paragraph:not(:last-child) {
+    margin-bottom: 33px;
+}
+
+.article__text .article__paragraph--bold {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    margin-bottom: 35px;
+}
+@media screen and (max-width: 1700px) {
+    /* .article:after {
+        bottom: -106px;
+        right: -190px;
+    } */
+    .article__firstScreen {
+        margin-bottom: 50px;
+    }
+
+    .article__content {
+        width: 86%;
+    }
+
+    .article__text {
+        text-align: justify;
+        width: 94%;
+    }
+
+    .article__paragraph:not(:last-child) {
+        margin-bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .article:after {
+        background-image: none;
+    }
+    .article__content {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .article__left {
+        width: 100%;
+        padding-top: 0;
+        margin-right: 0;
+        border: none;
+    }
+
+    .article__text {
+        width: 100%;
+    }
+
+    .article__date {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+
+    .article__shares {
+        margin-right: 10px;
+    }
+
+    .article__shareLink {
+        margin-bottom: 0;
+     }
+
+    .article__right {
+        width: 100%;
+        margin-bottom: 49px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .article__date {
+        font-size: 14px;
+    }
+    
+    .article__shareLink:hover {
+        border-color: #0000001A;
+        background-color: transparent
+    }
+    
+    .article__shareLink:hover .article__shareIcon {
+        fill: var(--black);
+    }
+
+    .article__shareLink:active {
+        border-color: var(--orange);
+        background-color: var(--orange);
+    }
+    
+    .article__shareLink:active .article__shareIcon {
+        fill: var(--white);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .article__firstScreen {
+        margin-bottom: 40px;
+    }
+
+    .article__right {
+        margin-bottom: 40px;
+    }
+
+    .article__date {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .article__paragraph {
+        font-size: 14px;
+    }
+    
+    
+    .article__text .article__paragraph--bold {
+        font-size: 18px;
+        line-height: 26.1px;
+    }
+
+    .article__shareLink {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .article__shareLink:not(:last-child) {
+        margin-right: 15px;
+    }
+    
+    .article__shareIcon {
+        width: 17px;
+        height: 17px;
+    }
+    
+}

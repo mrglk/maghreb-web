@@ -1,0 +1,98 @@
+.applicationForm__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 84px 90px 80px 90px;
+    width: 100%;
+
+}
+
+.applicationForm__form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.applicationForm__title {
+    text-align: center;
+    color: var(--white);
+    margin: 0 0 15px 0;
+
+}
+
+.applicationForm__description {
+    text-align: center;
+    font-size: 16px;
+    color: var(--white);
+    margin: 0 0 35px 0;
+    max-width: 352px;
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 1700px) {
+    .applicationForm {
+        border-radius: 16px;
+        max-width: 660px;
+    }
+
+    .applicationForm__inner {
+        padding: 54px 60px 50px 60px;
+        width: 100%;
+    }
+
+    .applicationForm__form {
+        max-width: 511px;
+    }
+
+    .applicationForm__description {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .applicationForm__inner {
+        padding: 50px 30px 40px 30px;
+        width: 100%;
+    }
+
+    .applicationForm__form {
+        max-width: 100%;
+    }
+
+
+    .applicationForm__title {
+        margin-bottom: 20px;
+    }
+
+    .applicationForm__description {
+        font-size: 14px;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .applicationForm__close {
+        top: 25px;
+        right: 25px
+    }
+
+    .applicationForm__inner {
+        padding: 40px 20px 40px 20px;
+    }
+
+    .applicationForm__title {
+        max-width: 234px;
+        margin-bottom: 15px;
+        line-height: 1;
+    }
+
+    .applicationForm__description {
+        max-width: 220px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .applicationForm__title {
+        max-width: 180px;
+    }
+}

@@ -1,0 +1,134 @@
+.firstScreen__inner {
+    width: 100%;
+}
+
+/* .firstScreen__breadcrumbs {
+    margin-bottom: 25px;
+} */
+
+.firstScreen__top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.firstScreen__title {
+    margin: 0 0 25px 0;
+    letter-spacing: -0.01em;
+    max-width: 817px;
+}
+
+.firstScreen__title--biggerMargin {
+    margin-bottom: 35px;
+}
+
+.firstScreen__title--noMargin {
+    margin: 0;
+}
+
+.firstScreen__description {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 480px;
+    opacity: 0.5;
+}
+
+.firstScreen__imgAndButton {
+    position: relative;
+}
+
+.firstScreen__imgWrapper {
+    overflow: hidden;
+    min-height: 600px;
+    border-radius: 24px;
+    transform: translateZ(0);
+}
+
+.firstScreen__img {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 24px;
+    -webkit-border-radius:  24px;
+    -moz-border-radius:  24px;
+}
+
+
+.firstScreen__button {
+    position: absolute;
+    top: -92.5px;
+    right: 141px;
+}
+
+
+@media screen and (max-width: 1700px) {
+    /* .firstScreen__breadcrumbs {
+        margin-bottom: 20px;
+    } */
+
+    .firstScreen__button {
+        position: absolute;
+        top: -82.5px;
+        right: 116px;
+    }
+
+    .firstScreen__imgWrapper {
+        min-height: 395px;
+        border-radius: 16px;
+    }
+
+    .firstScreen__img {
+        max-height: 395px;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .firstScreen__tabletHidden {
+        display: none;
+    }
+    .firstScreen__title {
+        margin-bottom: 30px;
+        max-width: 560px;
+    }
+
+    .firstScreen__title--biggerMargin {
+        margin-bottom: 20px;
+    }
+
+    .firstScreen__description {
+        max-width: 290px;
+    }
+
+    .firstScreen__top {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .firstScreen__button {
+        position: absolute;
+        top: -60px;
+        right: calc(50% - 60px);
+    }
+
+    .firstScreen__imgWrapper {
+        min-height: 310px;
+    }
+
+    .firstScreen__img {
+        max-height: 310px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .firstScreen__imgWrapper {
+        min-height: 410px;
+    }
+
+    .firstScreen__img {
+        max-height: 410px;
+    }
+}

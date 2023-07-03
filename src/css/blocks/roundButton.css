@@ -1,0 +1,53 @@
+.roundButton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 185px;
+    height: 185px;
+    border: 10px solid var(--white);
+    border-radius: 200px;
+    background-color: var(--orange);
+    color: var(--white);
+    transition: background-color 400ms ease;
+}
+
+.roundButton:hover {
+    background-color: var(--red);
+}
+
+.roundButton__text {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+@media screen and (max-width: 1700px) {
+    .roundButton {
+        width: 165px;
+        height: 165px;
+    }
+
+    .roundButton__text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .roundButton {
+        width: 120px;
+        height: 120px;
+        border-width: 8px;
+    }
+
+    .roundButton__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .roundButton {
+        width: 115px;
+        height: 115px;
+    }
+}

@@ -1,0 +1,270 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 0;
+}
+
+.form__fields {
+    max-width: 600px;
+}
+
+.form__fields--withoutMaxWidth {
+    max-width: 100%;
+}
+
+.form__input {
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-fill-color: var(--black);
+    box-shadow: 0 0 0px 1000px var(--white) inset;
+    -webkit-box-shadow: 0 0 0px 1000px var(--white) inset;
+
+    width: 100%;
+    height: 56px;
+    padding: 20px 25px;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form__input[data-valid="false"]{
+   border: 2px solid var(--red);
+  }
+
+.form__textarea {
+    height: 150px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    resize: none;
+}
+
+.form__nameAndPhoneInputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__nameAndPhoneInputs .form__input {
+    max-width: 290px;
+}
+
+.form__fields--withoutMaxWidth .form__input {
+    max-width: 100%;
+}
+
+.form__nameAndPhoneInputs .form__input:first-child {
+    margin-right: 20px;
+}
+
+.form__input::placeholder {
+    opacity: 0.3;
+}
+
+.form__input:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form__checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.form__checkboxInput {
+    position: absolute;
+    z-index: -1;
+    display: none;
+}
+
+.form__checkboxLabel {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form__checkboxBox {
+    position: relative;
+    min-width: 18px;
+    min-height: 18px;
+    max-width: 18px;
+    max-height: 18px;
+    border: 1.5px solid var(--white);
+    border-radius: 3px;
+}
+
+.form__checkboxMark {
+    position: absolute;
+    top: -3px;
+    left: -4px;
+
+    cursor: pointer;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.form__checkboxMark::before {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 68%;
+    height: 26%;
+    width: 1.5px;
+    background-color: var(--white);
+    content: "";
+    transform: translateX(9px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.form__checkboxMark::after {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 74%;
+    background-color: var(--white);
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.form__checkboxInput:checked+label .form__checkboxMark::after,
+.form__checkboxInput:checked+label .form__checkboxMark::before {
+    display: block;
+}
+
+.form__checkboxInput:not(:disabled):not(:checked)+label:hover::before {
+    cursor: pointer;
+}
+
+.form__checkboxText {
+    font-size: 16px;
+    color: var(--white);
+    margin: 0 0 0 18px;
+}
+
+.form__button {
+    display: flex;
+}
+
+.form__button--center {
+    justify-content: center;
+}
+
+@media screen and (max-width: 1700px) {
+    .form__fields {
+        max-width: 511px;
+    }
+    
+    .form__fields--withoutMaxWidth {
+        max-width: 100%;
+    }    
+
+    .form__nameAndPhoneInputs .form__input:first-child {
+        margin-right: 15px;
+    }
+
+    .form__input:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .form__checkbox {
+        margin-bottom: 30px;
+    }
+
+    .form__checkboxMark {
+        left: -4px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .form__fields {
+        max-width: 100%;
+    }
+
+    .form__nameAndPhoneInputs .form__input {
+        max-width: 100%;
+    }
+
+    .form__input {
+        background-color: var(--grey-white);
+        height: 52px;
+        padding: 19px 20px;
+        font-size: 14px;
+    }
+
+    .form__textarea {
+        height: 100px;
+        padding-top: 19px;
+    }
+
+    .form__checkboxBox {
+        min-width: 15px;
+        min-height: 15px;
+        max-width: 15px;
+        max-height: 15px;
+    }
+
+    .form__checkboxMark {
+        top: -5px;
+        left: -5.5px;
+    }
+
+    .form__checkboxMark::before {
+        position: absolute;
+        left: 0;
+        top: 71%;
+        height: 29%;
+        width: 1.3px;
+        background-color: var(--white);
+        content: "";
+        transform: translateX(10px) rotate(-45deg);
+        transform-origin: left bottom;
+    }
+
+    .form__checkboxMark::after {
+        height: 1.3px;
+        width: 60%;
+        transform: translateX(10px) rotate(-45deg);
+    }
+
+
+    .form__button {
+        justify-content: center;
+    }
+
+    .form__checkboxText {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .form__nameAndPhoneInputs {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .form__nameAndPhoneInputs .form__input:first-child {
+        margin-right: 0;
+    }
+
+    .form__input {
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .form__input:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .form__checkboxText {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+}

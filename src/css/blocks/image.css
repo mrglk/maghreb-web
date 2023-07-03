@@ -1,0 +1,49 @@
+.imageWrapper {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .imageWrapper--open {
+    animation: show 600ms linear;
+  }
+  
+  .imageWrapper .image__3d {
+    overflow: hidden;
+    opacity: 0;
+      transform: scale(1.2);
+  }
+  
+  .imageWrapper--open .image__3d {
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 1000ms ease;
+  }
+
+.image {
+    position: relative;
+}
+
+.image__zoom {
+    transform: scale(1.2);
+    transition: transform 300ms ease;
+}
+
+.image__zoom--out {
+    transform: scale(1);
+}
+
+@keyframes show {
+    0% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+    30% {
+      clip-path: polygon(0 0, 0 40%, 100% 0, 100% 0);
+    }
+    70% {
+      clip-path: polygon(0 0, 0 100%, 100% 60%, 100% 0);
+    }
+    100% {
+      clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+  }

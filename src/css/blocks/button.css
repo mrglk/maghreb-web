@@ -1,0 +1,95 @@
+.buttonWrapper {
+  border-radius: 8px;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-decoration: none;
+  
+    font-family: var(--generalFont);
+    font-size: 17px;
+    line-height: 1;
+  
+    color: var(--white);
+    border: none;
+  
+    padding: 19px 40px;
+    background-color: var(--red);
+    transition: background-color 300ms ease;
+  
+    flex-shrink: 0;
+  }
+
+  .button--wider {
+    padding: 19px 70px;
+  }
+
+  .button--white {
+    background-color: var(--white);
+    color: var(--black);
+    transition: background-color 300ms ease;
+  }
+
+  .button--orange {
+    background-color: var(--orange);
+    /* transition: background-color 300ms ease; */
+  }
+
+  .button--transparent {
+    background-color: transparent;
+    color: var(--black);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+
+  .button--border{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .button--desktopSmaller {
+    padding: 13px 32px;
+  }
+
+  @media screen and (max-width: 950px) {
+    .button {
+      width: 295px;
+      font-size: 16px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+
+    .button--smaller {
+      width: 248px;
+    }
+
+    .button--extraSmaller {
+      width: 237px;
+    }
+
+    .button:active {
+      background-color: var(--black);
+    }
+
+    .button--white:active {
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    .button--transparent:active {
+      background-color: var(--orange);
+      color: var(--white);
+    }
+  }
+  
+
+  @media screen and (max-width: 580px) {
+    .button {
+      width: 100%;
+    }
+  }
+  

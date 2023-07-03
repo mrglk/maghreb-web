@@ -1,0 +1,15 @@
+.breadcrumbs__link {
+    cursor: pointer;
+    color: var(--black);
+    opacity: 0.2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.breadcrumbs__link--active {
+    opacity: 1;
+}
+
+.breadcrumbs__link:not(:last-child):after {
+    content: '/';
+}

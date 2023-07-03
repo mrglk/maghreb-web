@@ -1,0 +1,49 @@
+.calendarPage__header {
+    margin-bottom: 40px;
+}
+
+.calendarPage__breadcrumbs {
+    margin-bottom: 25px;
+}
+
+.calendarPage__firstScreen {
+    margin-bottom: 85px;
+}
+
+.calendarPage__calendar {
+    margin-bottom: 180px;
+}
+
+@media screen and (max-width: 1700px) {
+    .calendarPage__breadcrumbs {
+        margin-bottom: 20px;
+    }
+    
+    .calendarPage__firstScreen {
+        margin-bottom: 70px;
+    }
+    
+    .calendarPage__calendar {
+        margin-bottom: 160px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .calendarPage__header {
+        margin-bottom: 30px;
+    }
+    
+    .calendarPage__firstScreen {
+        margin-bottom: 40px;
+    }
+    
+    .calendarPage__calendar {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .calendarPage__calendar {
+        margin-bottom: 70px;
+    }
+}
