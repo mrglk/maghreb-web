@@ -16,6 +16,7 @@ http://maghreb.ae/
 
 * JS
 * HTML5/СSS3
+* Webpack
 * WordPress
 
 ### Запуск проекта
